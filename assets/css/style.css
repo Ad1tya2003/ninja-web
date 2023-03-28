@@ -684,6 +684,7 @@ section .container {
   justify-content: center;
   margin-bottom: 20px;
   transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 .services .icon-box .icon i {
@@ -712,25 +713,31 @@ section .container {
 
 .services .icon-box h4 a {
   color: #fff;
+  /* transform: translateZ(20px); */
 }
 
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  /* transform: translateZ(20px); */
 }
 
 .services .icon-box:hover {
   background: #18d2cf;
   border-color: #18d2cf;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 .services .icon-box:hover .icon {
   background: #fff;
+  transform: translateZ(20px);
 }
 
 .services .icon-box:hover .icon i {
   color: #18d2cf;
+  transform: translateZ(20px);
 }
 
 .services .icon-box:hover .icon::before {
@@ -740,6 +747,7 @@ section .container {
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: #fff;
+  transform: translateZ(40px);
 }
 
 
